@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../logo.svg';
+import {Link} from "react-router-dom";
 
-const Page1 = ({onRouteChange}) => {
+const Page1 = () => {
     return <div className="App">
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -10,8 +11,10 @@ const Page1 = ({onRouteChange}) => {
             </p>
         </header>
         <button className="disabled">Page1</button>
-        <button onClick={() => onRouteChange('page2')}>Page2</button>
-        <button onClick={() => onRouteChange('page3')}>Page3</button>
+        <Link to="./page2"><button>Page2</button></Link>
+        <Link to="./page3"><button>Page3</button></Link>
     </div>
 }
 export default Page1;
+
+<Link to="./page2"></Link>
