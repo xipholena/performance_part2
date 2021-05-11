@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  border: 2px solid darkslategray;
+  background: rebeccapurple;
+  cursor: pointer;
+}
+
+.disabled {
+  border: 2px solid gray;
+  color: gray;
+  background: lightgray;
+  cursor: not-allowed;
+  pointer-events: none;
 }
